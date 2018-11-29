@@ -1,32 +1,41 @@
 <div class="container">
-    <section id="page-name">
-            <h1>Eat-Da-Burger</h1>
+    <section>
+        <img id="logo" src="assets/img/burgatory-neg.png">
     </section>
+</div>
 
-    <section class="row">
-        <div class="col-md-7 col-left">
-            <table>
+<div class="container">
+    <div class="row">
+        <div class="col-container">
+        <div class="col-md-6 dbSection" id="onTheMenu">
+            <h3>In Heaven...</h3>
+            <ul>
                 {{#each burgers}}
-                    {{#unless devoured}}
-                        {{> burger-block}}
-                    {{/unless}}
+                {{#unless devoured}}
+                {{> burger-block}}
+                {{/unless}}
                 {{/each}}
-            </table>
+            </ul>
         </div>
-        <div class="col-md-5 col-right">
-            {{#each burgers}}
+        <div class="col-md-6 dbSection" id="devoured">
+            <h3>In Hell...</h3>
+            <ul>
+                {{#each burgers}}
                 {{#if devoured}}
-                    <div>{{id}}. {{burger_name}}</div>
+                <li>{{burger_name}}</li>
                 {{/if}}
-            {{/each}}        
-        </div>          
-    </section>
-
-    <form class="create-form">
+                {{/each}}
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="row" id="form">
+        <form class="create-form">
         <div class="form-group">
             <label for="name"></label>
             <textarea id="name" name="burger-name" rows="2" cols="40" placeholder="What do you want to eat?"></textarea>
         </div>
         <button type="submit">Add Burger</button>
-    </form>     
+    </form>
+    </div>
 </div>
