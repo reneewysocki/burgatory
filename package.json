@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reneewysocki/burgers.git"
+    "url": "git+https://github.com/reneewysocki/burgatory.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reneewysocki/burgers/issues"
+    "url": "https://github.com/reneewysocki/burgatory/issues"
   },
-  "homepage": "https://github.com/reneewysocki/burgers#readme",
+  "homepage": "https://github.com/reneewysocki/burgatory#readme",
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
